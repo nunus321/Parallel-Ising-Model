@@ -2,7 +2,7 @@
 
 This project is based on a 2D Ising model simulation and explores how much it can be sped up using parallel computing. The best result came from the GPU version, which achieved about 25.6x speedup over the sequential baseline.
 
-The project compares a sequential CPU baseline with CUDA, OpenMP, and hybrid MPI + OpenMP implementations to see which approach gives the best performance for larger simulations.
+The project compares a sequential CPU baseline, CUDA (GPU parallelisation), OpenMP (multi-threading on one CPU/shared-memory system), and hybrid MPI + OpenMP (parallelisation across multiple processes, often on multiple computers/nodes, combined with CPU threads) to see which approach gives the best performance for larger simulations.
 
 ## What is included
 
