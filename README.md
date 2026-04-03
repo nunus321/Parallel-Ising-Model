@@ -1,10 +1,8 @@
 # Parallel Ising Model
 
-This repository contains my final project for the course High Performance Parallel Computing.
+This project is based on a 2D Ising model simulation and explores how much it can be sped up using parallel computing. The best result came from the GPU version, which achieved about 25.6x speedup over the sequential baseline.
 
-The project is based on a 2D Ising model simulation and looks at how much the runtime can be improved by moving from a sequential implementation to parallel versions using CUDA, OpenMP, and hybrid MPI + OpenMP.
-
-The main goal was to speed up the simulation enough that larger problem sizes become more practical to run and compare. For large simulations, a sequential version can quickly become too slow, so the project focuses on how different parallel approaches affect runtime, scaling, and overall performance.
+The project compares a sequential CPU baseline with CUDA, OpenMP, and hybrid MPI + OpenMP implementations to see which approach gives the best performance for larger simulations.
 
 ## What is included
 
